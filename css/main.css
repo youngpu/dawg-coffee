@@ -1,1 +1,180 @@
-/* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body {
+	font-family:Lato, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE;
+}
+
+dd {
+	font-style: italic;
+	text-indent: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+	color: #BC6026;
+}
+
+img {
+	border-radius: 5px;
+}
+
+li {
+	display: inline;
+}
+
+nav {
+	position: fixed;
+	background-color: #181C22;
+	width: 100%;
+	z-index: 100;
+}
+
+nav a {
+	fill: white;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #D87E28;	
+}
+
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+}
+
+svg {
+	height: 1em;
+	margin-left: 15px;
+}
+
+#cafeInfo {
+	background-color: #DBDCE3;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+#cafeInfo svg {
+	fill: #BC6026;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#footer {
+	border-top: solid 3px #D87E28;
+	background-color: #afb3c2;
+	font-size: 12px;
+	padding-top: 1em;
+	clear: both;
+}
+
+#header {
+	padding-top: 3em;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#headline {
+	font-style: italic;	
+	text-align: left;
+	margin-top: 1.5em;
+}
+
+#icon {
+	display: none;
+	height: 1.5em;
+	fill: #BC6026;
+	margin-bottom: 1em;
+}
+
+#motto {
+	display: none;
+}
+
+#navLink {
+	color: white;
+	font-size: 16px;
+	padding: 0.5em;
+	font-variant: small-caps;
+}
+
+#story {
+	background-color: #dbdce3;
+}
+
+#storyImage {
+	float: right;
+	max-height: 300px;
+	margin-left: 1em;
+	border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+	h2 {
+		text-align: center;
+		padding: 1em;
+	}
+	nav {
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+	li {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	#footerIcon {
+		text-align: right;
+	} 
+	#header {
+		background-image: url(../img/background-sm.jpg);
+		background-repeat: no-repeat;
+		color: white;
+		min-height: 550px;
+		text-align: right;
+		width: 100%;
+	}
+	#headline {
+		font-size: 1.25em;
+		padding-top: 3em;
+		padding-bottom: 3em;
+		text-align: center;
+	}
+	#icon {
+		display: initial;
+	}
+	#motto {
+		display: initial;
+	}
+	#storyImage {
+		max-height: 400px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#header {
+		background-image: url(../img/background-md.jpg);
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#header {
+		background-image: url(../img/background-lg.jpg);
+	}
+}
+
